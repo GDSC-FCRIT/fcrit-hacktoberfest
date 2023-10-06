@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+/* h1 {
+  margin: 0;
+} */
+
+.tag-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.tag-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tag-button.selected {
+  background-color: #0056b3;
+}
+
+main {
+  padding: 20px;
+}
+
+.card-img-top {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin: 10px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+.card {
+  flex: 1;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.sort-filter {
+  padding: 10px;
+}
+.sort-button {
+  margin: 5px;
+}

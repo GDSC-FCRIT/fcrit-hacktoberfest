@@ -95,3 +95,56 @@ main {
 .sort-button {
   margin: 5px;
 }
+
+footer{
+  height: 450px;
+  width: 100%;
+  position: absolute;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  bottom: 0px;
+}
+
+.footer-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-social{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 50px;
+  color: #676c72;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.footer-social p{
+  padding-left: 106px;
+}
+
+.social-links{
+  display: flex;
+  padding-left: 106px;
+  gap: 40px;
+}
+
+.icon{
+  font-size: 50px;
+}
+
+a{
+  color: inherit;
+}
+
+.icon:hover{
+  color: black;
+}
+

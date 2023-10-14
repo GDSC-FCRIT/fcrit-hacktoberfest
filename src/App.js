@@ -102,9 +102,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>GitHub Hacktoberfest Showcase</h1>
+        <h1>
+          <a href="/" className="title">GitHub Hacktoberfest Showcase</a>
+        </h1>
         <div className="tag-filter">
-          <span>Filter by Tags:</span>
+          <span className="aligning">Filter by Tags:</span>
           {tags.map((tag) => renderTagButton(tag))}
         </div>
         <div className="sort-filter">

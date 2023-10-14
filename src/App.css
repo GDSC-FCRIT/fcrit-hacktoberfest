@@ -19,12 +19,23 @@ body {
   margin: 0;
 } */
 
+.title {
+  text-decoration: none;
+  color: rgb(255, 255, 255); 
+  display: inline-block;
+  cursor: pointer; 
+}
+
 .tag-filter {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
   margin-top: 20px;
+}
+
+.aligning {
+  padding-top: 3px;
 }
 
 .tag-button {

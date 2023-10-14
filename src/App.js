@@ -140,7 +140,13 @@ function App() {
                           style={{ width: "30%", height: "auto" }}
                         />
                         <div className="card-body">
-                          <h5 className="card-title">{repo.name}</h5>
+                           <a
+                            href={repo.html_url}
+                            className="btn btn-primary"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          ><h5 className="card-title">{repo.name}</h5>
+                          </a>
                           <p className="card-text">{repo.description}</p>
                           <p className="card-text">
                             Stars: {repo.stargazers_count}
@@ -185,6 +191,7 @@ function App() {
       </main>
     </div>
   );
+
 }
 
 export default App;

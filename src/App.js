@@ -26,6 +26,7 @@ function App() {
   // Function to list repositories with Hacktoberfest tag
   const listHacktoberfestRepos = useCallback(
     async (tags, page) => {
+      setLoading(true);
       try {
         //  the query parameters
         const tagQuery =
@@ -109,18 +110,14 @@ function App() {
         </div>
         <div className="sort-filter">
           <span>Sort by Stars:</span>
-          <button
-            className={`sort-button ${sortOrder === "asc" ? "selected" : ""}`}
-            onClick={() => handleSortChange("asc")}
-          >
-            Ascending
-          </button>
-          <button
-            className={`sort-button ${sortOrder === "desc" ? "selected" : ""}`}
-            onClick={() => handleSortChange("desc")}
-          >
-            Descending
-          </button>
+         
+          <select className="sort-order-select" onChange={(e) => {
+            handleSortChange( (e.target.value) === "Ascending" ? "asc" : "desc" );
+          }}>
+            <option>Ascending</option>
+            <option>Descending</option>
+          </select>
+
         </div>
       </header>
       <main>
@@ -163,13 +160,15 @@ function App() {
                 </div>
               ))
             ) : (
+              (loading) ? 
+              <p>Searching for Repositories...</p> :
               <p>No repositories found.</p>
             )}
           </div>
           {/* Pagination controls */}
           <div className="pagination">
             {currentPage > 1 && (
-              <button className="btn btn-secondary" onClick={handlePrevPage}>
+              <button className="btn btn-secondary" onClick={handlePrevPage} disabled={loading}>
                 Previous
               </button>
             )}

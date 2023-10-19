@@ -24,20 +24,22 @@ body {
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
+  align-items: center;
   margin-top: 20px;
 }
 
 .tag-button {
   background-color: #007bff;
   color: white;
-  border: none;
+  border: 2px solid transparent;
   padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .tag-button.selected {
-  background-color: #0056b3;
+  background-color: #004ea2;
+  border: 2px solid rgb(60, 99, 197);
 }
 
 main {
@@ -72,6 +74,25 @@ main {
 .btn-primary:hover {
   background-color: #0056b3;
 }
+
+.btn-secondary {
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.btn-secondary:hover {
+  background-color: #0056b3;
+}
+.btn-secondary:disabled {
+  cursor: not-allowed;
+}
+
 .card {
   flex: 1;
   margin: 10px;
@@ -91,7 +112,30 @@ main {
 }
 .sort-filter {
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  flex-wrap: wrap;
 }
+
 .sort-button {
   margin: 5px;
+}
+
+.sort-order-select {
+  background-color: #363636;
+  border: 1px solid rgb(104, 104, 104);
+  border-radius: 8px;
+  color: white;
+  padding: 6px;
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+  cursor: pointer;
+}
+
+
+.sort-order-select option {
+  padding: 30px;
 }

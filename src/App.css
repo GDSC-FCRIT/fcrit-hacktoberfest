@@ -34,10 +34,6 @@ body {
   margin-top: 20px;
 }
 
-.aligning {
-  padding-top: 3px;
-}
-
 .tag-button {
   background-color: #007bff;
   color: white;
@@ -49,6 +45,15 @@ body {
 
 .tag-button.selected {
   background-color: #0056b3;
+}
+
+.reset-button {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 main {

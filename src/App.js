@@ -57,6 +57,11 @@ function App() {
     setSelectedTags(newSelectedTags);
   };
 
+// Resetting all tags
+  const handleReset = () => {
+    setSelectedTags([]);
+  };
+
   const handleNextPage = () => {
     const nextPage = currentPage + 1;
 
@@ -106,8 +111,14 @@ function App() {
           <a href="/" className="title">GitHub Hacktoberfest Showcase</a>
         </h1>
         <div className="tag-filter">
-          <span className="aligning">Filter by Tags:</span>
+          <span>Filter by Tags:</span>
           {tags.map((tag) => renderTagButton(tag))}
+          <button
+            className="reset-button"
+            onClick={() => handleReset()}
+          >
+            Reset all Tags
+          </button>
         </div>
         <div className="sort-filter">
           <span>Sort by Stars:</span>

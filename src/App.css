@@ -19,6 +19,13 @@ body {
   margin: 0;
 } */
 
+.title {
+  text-decoration: none;
+  color: rgb(255, 255, 255); 
+  display: inline-block;
+  cursor: pointer; 
+}
+
 .tag-filter {
   display: flex;
   flex-wrap: wrap;
@@ -40,6 +47,15 @@ body {
 .tag-button.selected {
   background-color: #004ea2;
   border: 2px solid rgb(60, 99, 197);
+}
+
+.reset-button {
+  background-color: white;
+  color: black;
+  border: 2px solid transparent;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 main {
